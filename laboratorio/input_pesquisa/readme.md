@@ -1,0 +1,1 @@
+Criação de um input para adicinar palavra chaves vizando pesquisar itens no site.
