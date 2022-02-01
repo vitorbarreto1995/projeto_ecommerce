@@ -1,0 +1,49 @@
+body{
+    background: linear-gradient(rgba(50, 52, 185, 0.589),rgb(31, 6, 173));
+    margin: 0px;
+    height: 20000vh; 
+    width: 100vw;
+}
+.topPage{
+    padding: 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.438);
+    position: fixed;
+    top: 0;
+    left: 0;    
+    width: 100%;   
+}
+.topTxt{
+    color: seashell;
+    text-align: center;
+    margin: 0px;
+}
+.menuLateral{
+    width: 130px;
+    height: 450px;
+    background: rgba(0, 0, 0, 0.438);
+    position: fixed;    /*   atributos (absolute(em relação ao body), fixed, relative(determina o elemento pai como referência))  */
+    bottom: 200px;
+    border-radius:  15px;
+
+}
+.menuList{
+    height: 300px;
+    width: 130px; 
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color:  rgba(255, 255, 255, 0.835);
+    
+   
+    
+    
+    
+
+}
