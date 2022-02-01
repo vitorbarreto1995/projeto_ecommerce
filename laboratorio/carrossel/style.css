@@ -1,0 +1,38 @@
+*{ margin: 0;   padding: 0; box-sizing: border-box ;    } /* ajuda na responsividade...*/
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+#items-wrapper{
+    width: 100vw;
+    
+}
+
+#items {
+    display: flex;
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* para poder adicionar a função scroll-snap-type em alguns navegadores que não funcionariam sem o comando webkit*/
+
+    scroll-behavior: smooth;    /*para meu scroll ter comportamento mais lento e suave.*/
+}
+
+.item   {
+    flex: none;
+    width: 100%;
+    height: 400px;
+
+    scroll-snap-align: start;
+
+    pointer-events: none;     /*Para desaivar os eventos do meu cursos e esse evento vai passar paro o elemento pai que nesse cado é o #items onde vai ter o efeito de scroll da rolagem do mauser em cima do #items*/
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

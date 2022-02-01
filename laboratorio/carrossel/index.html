@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    
+        <title>Carrossel com scroll</title>
+    </head>
+    <body>
+
+        <div id="items-wrapper">
+            <div id="items">
+                <div class="item"> <img src="AdobeStock_126372361_Preview.jpeg"></div>
+                <div class="item"> <img src="AdobeStock_166340850_Preview.jpeg"></div>
+                <div class="item"> <img src="AdobeStock_170426890_Preview.jpeg" ></div>
+                <div class="item"> <img src="AdobeStock_208132893_Preview.jpeg"></div>
+                <div class="item"><img src="AdobeStock_97496298_Preview.jpeg" ></div>
+            </div>
+        </div>
+        <script>
+            document.querySelector("#items")
+.addEventListener("wheel",  event  =>   {
+    if(event.deltaY > 0) {
+       event.target.scrollBy(300 , 0)
+    }else{
+        event.target.scrollBy(-300, 0)
+    }
+})  /*Por algum motivo estava dando erro no .addEventListener quando o script estava em um documento externo por isso tive que adicionar ao corpo do HTML.*/
+        </script>
+    </body>
+    </html>
