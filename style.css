@@ -1,0 +1,59 @@
+body  {
+background-image: linear-gradient(to right, #452A75, #4A0BC2);
+height: 2000px;
+margin: 0px;
+}
+
+.inputPesquisa  {
+    position: absolute;
+    right: 15%;
+    top: 70px;
+    height: 30px;
+    width: 600px;
+
+}
+
+.txtPesquisa {
+    border: none;
+    background: #9059f79d;
+    padding: 0px;
+    height: 25px;
+    width: 600px;
+    border-radius: 10px;
+    font-size: 16px;
+    
+ 
+}
+
+#containerBotao {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #9059F7;
+    position: absolute;
+    top: 150px;
+    
+
+}
+
+.botaoTopo  {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+   padding: 15px;
+   position: absolute;
+   left: 100px;
+
+}
+
+li{
+    margin-right: 20px; 
+    font-size: 18px;
+    font-family: ; /*trocar fonte */
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
