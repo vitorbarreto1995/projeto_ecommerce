@@ -1,6 +1,7 @@
 body  {
 background-image: linear-gradient(to right, #452A75, #4A0BC2);
-height: 2000px;
+height: 100vh;
+width: 100vw;
 margin: 0px;
 }
 
@@ -8,23 +9,57 @@ margin: 0px;
     position: absolute;
     right: 15%;
     top: 70px;
-    height: 30px;
+    height: 20px;
     width: 600px;
+    position: fixed;
+    background: #9059f79d;
+    border-radius: 30px;
+    padding: 5px;
+    display: flex;  /*serve para alinhar os elementos*/
+    justify-content: space-between;     /*joga o primeiro item totalmente para a esquerada e o segundopara a direita*/
+    align-items: center;
 
 }
 
 .txtPesquisa {
     border: none;
-    background: #9059f79d;
-    padding: 0px;
-    height: 25px;
-    width: 600px;
-    border-radius: 10px;
+    background: none;
+    height: 15px;
+    width: 300px;
     font-size: 16px;
+    padding: 0 15px; /*espaçamento vertical e horizontal*/
+    outline: none ;     /*para tirar a borda ao clicar*/
+    padding: 0 0px;
+    position: absolute;
     
- 
 }
 
+.txtPesquisa::placeholder{  /*comando para modificar o placeholder de um input*/
+    color: white; 
+}
+
+.inputPesquisa:hover{
+    background: #ffffff0e;
+}
+
+.botaoPesquisa{
+    height: 15px;
+    width: 20px;
+    background: none ;
+    display: flex;  /*serve para alinhar os itens*/
+    /*justify-content: center;*/    /*alinha o elemento horizontalmente*/
+    align-items: center;    /*serve para alinhar os itens verticalmente*/
+    padding: 0 0px;
+    position: relative;
+    left: 560px;
+}
+
+.img_lupa{
+    height: 20px;
+    width: 20px;
+   padding: 0 15px;
+}
+     
 #containerBotao {
     position: fixed;
     width: 100%;
@@ -32,6 +67,8 @@ margin: 0px;
     background-color: #9059F7;
     position: absolute;
     top: 150px;
+    position: fixed;
+    
     
 
 }
@@ -41,19 +78,29 @@ margin: 0px;
     display: flex;
     align-items: center;
     margin: 0px;
-   padding: 15px;
+   padding: 0px;
    position: absolute;
    left: 100px;
+   position: fixed;
+   width: 50px;
+    height: 50px;
 
 }
+
+
+
 
 li{
     margin-right: 20px; 
     font-size: 18px;
     font-family: ; /*trocar fonte */
+  
+    
 }
 
 a{
     color: white;
     text-decoration: none;
+    
 }
+
