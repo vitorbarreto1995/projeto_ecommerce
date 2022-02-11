@@ -46,15 +46,31 @@
 
     <div    class="containerVitrine">
         <div    class="imgVitrine">
-            <img src="image/BANOFI400X400.png" alt="img1">
-            <img src="image/blue-blend400x400.png" alt="img2">
-            <img src="image/CHERRY_BLEND-400x400.png" alt="img3">
-            <img src="image/FRESH_TANGER-400x400.png" alt="img4">
+            <img class="promoVitrine" src="image/BANOFI400X400.png" alt="img1">
+            <img class="promoVitrine"   src="image/blue-blend400x400.png" alt="img2">
+            <img class="promoVitrine"    src="image/CHERRY_BLEND-400x400.png" alt="img3">
+        </div>
+    </div>
+
+    <div class="containerCarrossel">
+        <div class="subContCarrossel">
+            <div class="itemsCarrossel"><img src="image/BLUEBERRY-zomo.jpg" alt="zomo"></div>
+            <div class="itemsCarrossel"><img src="image/BLUEBERRY_MINT-zomo.jpg" alt="zomo"></div>
+            <div class="itemsCarrossel"><img src="image/BANANA-zomo.jpg" alt="zomo"></div>
         </div>
     </div>
     
 
-    
+    <script>
+        document.querySelector("#subContCarrossel")
+.addEventListener("wheel",  event  =>   {
+    if(event.deltaY > 0) {
+       event.target.scrollBy(300 , 0)
+    }else{
+        event.target.scrollBy(-300, 0)
+    }
+})
+    </script>
 
 </body>
 

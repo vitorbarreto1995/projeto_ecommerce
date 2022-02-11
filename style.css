@@ -1,6 +1,6 @@
 body  {
 background-image: linear-gradient(to right, #452A75, #4A0BC2);
-height: 100vh;
+height: 1000vh;
 width: 100vw;
 margin: 0px;
 }
@@ -93,16 +93,11 @@ margin: 0px;
 
 }
 
-
-
-
-
 li{
     margin-right: 20px; 
     font-size: 18px;
     font-family: ; /*trocar fonte */
   
-    
 }
 
 a{
@@ -119,7 +114,57 @@ a{
 }
 
 .containerVitrine{
-    position: absolute;
-    top: 350px;
+    position: relative;
+    top: 40px;
+    width: 100vw;
+
+}
+
+.imgVitrine{
+   
+    display: flex;
+    position: relative;
    
 }
+
+.promoVitrine{
+    position: relative;
+    left: 133px;
+}
+
+.containerCarrossel{
+    width: 31vw;
+    position: relative;
+    left: 500px;
+    top: 120px;
+}
+
+.subContCarrossel{
+    display: flex;
+    overflow-x:   auto;     /*adiciona um escroll horizontal*/
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 550px;
+}
+
+.itemsCarrossel{
+    flex: none;
+    width: 100%;
+    right: 100%;
+    scroll-snap-align: start;
+    pointer-events: none;
+    object-fit: cover;  /* redimenciona a imagem*/
+   
+}
+
+.subContCarrossel::-webkit-scrollbar{       /*para formatar o scroll*/
+    width: 50px;
+    height: 20px;
+    border: solid 1px #9059F7;
+    border-radius: 30px;
+    background: #9059f769  ;
+}
+
+
