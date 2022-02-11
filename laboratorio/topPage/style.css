@@ -1,0 +1,99 @@
+body{
+    margin: 0px;
+    font-size: 16px;
+    font-family: arial;
+    background-image:   linear-gradient(to left, #5F0FF5, #9059F7);
+}
+
+header{
+    background: #2E0775;
+    display: flex;
+    flex-wrap:  wrap;                                   /*dá proporção aos itens com telas pequenas.*/
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;  
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu   li{
+    margin-left: 20px;
+}
+
+.menu li a{
+    display: block;
+    padding: 20px;
+
+}
+
+#btnHome{
+    background: #5f0ff5a1;
+}
+
+#btnHome:hover{
+    background: #9059F7;
+}
+
+#txtDestaque{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+p{
+    margin: 0px;
+    font-size: 18px;
+    color: white;
+}
+
+.btnComprar{
+    
+    border-radius: 5px;
+    background: #2E0775;
+    font-size: 20px;
+    font-family: arial;
+    padding: 5px 5px;
+    position: relative;
+    top: 10px;
+    left: 10px;    
+}
+
+.btnComprar:hover{
+    background: #5f0ff5a1;
+    color: black;
+}
+
+.containerDestaque{
+display: flex;
+flex-wrap: wrap;
+max-width: 1200px;
+margin: 0 auto ;
+}
+
+.containerDestaque  > .imgDestaque{
+    flex: 1 1 200px;
+    margin: 10px;
+
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
